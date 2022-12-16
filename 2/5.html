@@ -32,7 +32,71 @@ Infinity делать не нужно, однако, в случае если б
 <script>
   "use strict";
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  
+  /*
+   * Возвращает сумму переданных аргументов.
+   * @param {number} a - первое число.
+   * @param {number} b - второе число.
+   * @return {number} - сумма чисел.
+  */
+  function sum(a, b) {
+    return a + b;
+  }
+
+  /*
+   * Возвращает разницу переданных аргументов.
+   * @param {number} a - первое число.
+   * @param {number} b - второе число.
+   * @return {number} - разница чисел.
+  */
+  function diff(a, b) {
+    if (a > b) {
+      return a - b;
+    }
+    return b - a;
+  }
+
+  /*
+   * Возвращает произведение переданных аргументов.
+   * @param {number} a - первое число.
+   * @param {number} b - второе число.
+   * @return {number} - проиведение чисел.
+  */
+  function mult(a, b) {
+    return a * b;
+  }
+
+  /*
+   * Возвращает частное переданных аргументов.
+   * @param {number} a - первое число.
+   * @param {number} b - второе число.
+   * @return {number} - частное чисел.
+  */
+  function div(a, b) {
+    return a / b;
+  }
+
+  /*
+   * Возвращает операцию (третий аргумент) первых двух переданных аргументов.
+   * @param {number} a - первое число.
+   * @param {number} b - второе число.
+   * @param {string} operation - выбор одного из действий:
+   *      "+" - сложение, 
+   *      "-" - разница, 
+   *      "*" - произведение, 
+   *      "/" - частное.
+   * @return {number} - результат операции над первыми двумя аргументами. 
+   * В случае некорректности - NaN.
+  */
+  function mathOperation(arg1, arg2, operation) {
+    switch (operation) {
+      case "+": return sum(arg1, arg2);
+      case "-": return difference(arg1, arg2);
+      case "*": return multiplication(arg1, arg2);
+      case "/": return division(arg1, arg2);
+      default: return NaN;
+    }
+  }
 </script>
 </body>
 </html>
