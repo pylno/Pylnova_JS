@@ -44,7 +44,15 @@
     },
   ];
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  // Фильтруем по массиву photos, если в нем что-то есть (его длина не нулевая):
+  console.log(products.filter(
+    product => "photos" in product && product.photos.length !== 0
+  ));
+  // 
+  products.sort(function(product1, product2) {
+  return product1.price - product2.price;
+  });
+  console.log(products);
 </script>
 </body>
 </html>

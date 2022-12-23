@@ -29,7 +29,19 @@
     },
   ];
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  // Цены до изменения:
+  products.forEach(function(product, i, products) {
+  console.log(`${product.price}`);
+  });
+  // Меняем цены:
+  products.forEach(function(product) {
+  product.price *= 0.85;
+  return product.price;
+  });
+  // Цены после изменения:
+  products.forEach(function(product, i, products) {
+  console.log(`${product.price}`);
+  });
 </script>
 </body>
 </html>
