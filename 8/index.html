@@ -23,8 +23,22 @@
 
                 <span class="cartIconWrap">
                     <img class="cartIcon" src="images/cart.png" alt="">
-                    <span>5</span>
+                    <span>0</span>
                 </span>
+
+                <div class="basket hidden">
+                    <div class="basketRow basketHeader">
+                        <div>Товар</div>
+                        <div>Кол-во</div>
+                        <div>Цена за шт.</div>
+                        <div>Итого</div>
+                    </div>
+
+                    <div class="basketTotal">
+                        Товаров на сумму:
+                        $<span class="basketTotalValue">0</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -136,13 +150,11 @@
         <div class="featuredTitle">Shop for items based on what we featured in this week</div>
 
         <div class="featuredItems">
-
-            <div class="featuredItem">
-
+            <div class="featuredItem" data-id="1" data-name="ELLERY X M'O CAPSULE" data-price="52">
                 <div class="featuredImgWrap">
                     <img src="images/featured/1.jpg" alt="">
                     <div class="featuredImgDark">
-                        <button>
+                        <button class="addToCart">
                             <img src="images/cart.svg" alt="">
                             Add to Cart
                         </button>
@@ -162,15 +174,13 @@
                         $52.00
                     </div>
                 </div>
-
             </div>
 
-            <div class="featuredItem">
-
+            <div class="featuredItem" data-id="2" data-name="ELLERY X M'O" data-price="52">
                 <div class="featuredImgWrap">
                     <img src="images/featured/2.jpg" alt="">
                     <div class="featuredImgDark">
-                        <button>
+                        <button class="addToCart">
                             <img src="images/cart.svg" alt="">
                             Add to Cart
                         </button>
@@ -179,7 +189,7 @@
 
                 <div class="featuredData">
                     <div class="featuredName">
-                        ELLERY X M'O CAPSULE
+                        ELLERY X M'O
                     </div>
                     <div class="featuredText">
                         Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
@@ -190,15 +200,13 @@
                         $52.00
                     </div>
                 </div>
-
             </div>
 
-            <div class="featuredItem">
-
+            <div class="featuredItem" data-id="3" data-name="ELLERY X M" data-price="52">
                 <div class="featuredImgWrap">
                     <img src="images/featured/3.jpg" alt="">
                     <div class="featuredImgDark">
-                        <button>
+                        <button class="addToCart">
                             <img src="images/cart.svg" alt="">
                             Add to Cart
                         </button>
@@ -207,7 +215,7 @@
 
                 <div class="featuredData">
                     <div class="featuredName">
-                        ELLERY X M'O CAPSULE
+                        ELLERY X M
                     </div>
                     <div class="featuredText">
                         Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
@@ -218,15 +226,13 @@
                         $52.00
                     </div>
                 </div>
-
             </div>
 
-            <div class="featuredItem">
-
+            <div class="featuredItem" data-id="4" data-name="ELLERY X" data-price="52">
                 <div class="featuredImgWrap">
                     <img src="images/featured/4.jpg" alt="">
                     <div class="featuredImgDark">
-                        <button>
+                        <button class="addToCart">
                             <img src="images/cart.svg" alt="">
                             Add to Cart
                         </button>
@@ -235,7 +241,7 @@
 
                 <div class="featuredData">
                     <div class="featuredName">
-                        ELLERY X M'O CAPSULE
+                        ELLERY X
                     </div>
                     <div class="featuredText">
                         Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
@@ -246,15 +252,13 @@
                         $52.00
                     </div>
                 </div>
-
             </div>
 
-            <div class="featuredItem">
-
+            <div class="featuredItem" data-id="5" data-name="ELLERY" data-price="52">
                 <div class="featuredImgWrap">
                     <img src="images/featured/5.jpg" alt="">
                     <div class="featuredImgDark">
-                        <button>
+                        <button class="addToCart">
                             <img src="images/cart.svg" alt="">
                             Add to Cart
                         </button>
@@ -263,7 +267,7 @@
 
                 <div class="featuredData">
                     <div class="featuredName">
-                        ELLERY X M'O CAPSULE
+                        ELLERY
                     </div>
                     <div class="featuredText">
                         Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
@@ -274,14 +278,13 @@
                         $52.00
                     </div>
                 </div>
-
             </div>
-            <div class="featuredItem">
 
+            <div class="featuredItem" data-id="6" data-name="ELL" data-price="52">
                 <div class="featuredImgWrap">
                     <img src="images/featured/6.jpg" alt="">
                     <div class="featuredImgDark">
-                        <button>
+                        <button class="addToCart">
                             <img src="images/cart.svg" alt="">
                             Add to Cart
                         </button>
@@ -290,7 +293,7 @@
 
                 <div class="featuredData">
                     <div class="featuredName">
-                        ELLERY X M'O CAPSULE
+                        ELL
                     </div>
                     <div class="featuredText">
                         Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
@@ -301,7 +304,6 @@
                         $52.00
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -323,7 +325,6 @@
 
     <div class="services">
         <div class="container">
-
             <div class="serivceUnit">
                 <img src="images/services/delivery.svg" alt="">
                 <div class="servicesTitle">
@@ -358,14 +359,12 @@
 
     <div class="subscribe">
         <div class="container">
-
             <div class="subscribeLeft">
                 <img src="images/subscribeUser.png" alt="">
                 <div class="subscribeUserText">
                     “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
                 </div>
             </div>
-
             <div class="subscribeRight">
                 <div class="subscribeTitle">
                     SUBSCRIBE
@@ -405,6 +404,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="basket.js"></script>
 </body>
-
 </html>

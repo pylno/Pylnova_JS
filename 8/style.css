@@ -75,6 +75,40 @@ body {
     line-height: 19px;
 }
 
+.basket {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 60px;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.basketHeader {
+    font-weight: bold;
+}
+
+.basketTotal {
+    font-weight: bold;
+}
+
+.basketRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+@media (min-width: 500px) {
+    .basket {
+        font-size: 14px;
+        width: 500px;
+    }
+}
+
 .newArrivals {
     background: #f8f3f4;
     min-height: 148px;
